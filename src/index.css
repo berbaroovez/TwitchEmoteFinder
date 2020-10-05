@@ -1,3 +1,31 @@
+.navLink, .navLink:hover{
+  color: #252A30;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.body-class{
+background-color:#3e474f;
+}
+
+.mainNavbar{
+  background-color: #C4F0DE;
+  margin-bottom: 20px;
+}
+.searchbar{
+  width: 50%;
+  margin: 0 auto;
+}
+.mainBTN{
+  background-color: #C4F0DE;
+  color: #3e474f;
+  font-weight: 500;
+}
+
+.username{
+ 
+  text-align: center;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +33,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ffz-emotes, .bttv-emotes, .ttv-emotes  {
+text-align: center;
+}
+
+img {
+  max-height: 32px;
+}
+
+
+.emote {
+ position: relative;
+ max-width: 100%;
+ text-align: center;
+ flex-grow: 1;
+background-color: #2D3339;
+border: 1px solid #252A30;
+padding: 5px;
+}
+
+.e-container{
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+
+.emote-label {
+  color: white;
+  font-weight: 600;
+}
+
+
+/* .bttv-emotes {
+  border: red solid 2px;
+  width: auto;
+  
+ 
+}
+
+.ffz-emotes{
+  border: blue solid 2px;
+  width: auto;
+ 
+} */
