@@ -1,5 +1,5 @@
 .navLink, .navLink:hover{
-  color: #252A30;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -33,6 +33,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 
 }
 
