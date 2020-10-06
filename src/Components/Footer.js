@@ -29,7 +29,7 @@ export default function Footer() {
       >
         <Box m="auto">
         <Typography variant="p" className={classes.title}>
-            This website was inspire by the original at <a href="https://astrid.slmn.io/twitch/">HERE</a>. I remade the website
+            This website was inspired by the original which can be found <a href="https://astrid.slmn.io/twitch/">HERE</a>. I remade the website
             to learn how to use react functional components. Made by <a href="https://twitter.com/berbaroovez">Berbaroovez</a>
           </Typography>
         </Box>
