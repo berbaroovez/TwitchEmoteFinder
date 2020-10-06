@@ -8,9 +8,22 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Box from '@material-ui/core/Box';
 import Emote from '../Components/Emote'
+import { makeStyles } from '@material-ui/core/styles';
+
+
+
+
+const useStyles = makeStyles((theme) => ({
+  
+    input1: {
+        height: 3,
+        backgroundColor:"white"
+        
+      }
+}));
 
 export default  function Main(){
-
+    const classes= useStyles()
 
     const [twitchUserName, setTwitchUserName] = useState('')
     const [textFieldValue, setTextFieldValue] = useState('')
@@ -158,10 +171,10 @@ const getTTV = () =>{
         display="flex" 
       >
         <Box m="auto">
-        <TextField id="standard-basic" onKeyDown={handleEnter} onChange={handleUserNameChange} />
+        <TextField id="standard-basic" onKeyDown={handleEnter} onChange={handleUserNameChange}  InputProps={{ classes: { input: classes.input1 } }} variant="filled" />
             <Link to={`/${textFieldValue}`} >
                 <Button variant="contained" color="primary" onClick={handleSearch}>
-                PogU
+                Search
                 </Button> 
             </Link>
         </Box>
