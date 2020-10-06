@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import {useParams} from "react-router-dom"
-import { makeStyles } from '@material-ui/core/styles';
+
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import {Link} from "react-router-dom"
@@ -134,7 +134,12 @@ const getTTV = () =>{
 
 
 
-
+    const handleEnter=(e)=>{
+        return(
+            e.key==='Enter'?handleSearch:null
+        )
+        
+    }
     const handleSearch=()=>{
         setTwitchUserName(textFieldValue)
     }
@@ -153,7 +158,7 @@ const getTTV = () =>{
         display="flex" 
       >
         <Box m="auto">
-        <TextField id="standard-basic"  onChange={handleUserNameChange} />
+        <TextField id="standard-basic" onKeyDown={handleEnter} onChange={handleUserNameChange} />
             <Link to={`/${textFieldValue}`} >
                 <Button variant="contained" color="primary" onClick={handleSearch}>
                 PogU

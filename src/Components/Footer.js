@@ -1,4 +1,4 @@
-import React,  {useEffect, useState} from 'react';
+import React from 'react';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -29,7 +29,7 @@ export default function Footer() {
       >
         <Box m="auto">
         <Typography variant="p" className={classes.title}>
-            This website was inspire by the original at <a href="https://slmn.io/emote">HERE</a>. I remade the website
+            This website was inspire by the original at <a href="https://astrid.slmn.io/twitch/npm">HERE</a>. I remade the website
             to learn how to use react functional components. Made by <a href="https://twitter.com/berbaroovez">Berbaroovez</a>
           </Typography>
         </Box>
